@@ -1,0 +1,20 @@
+{
+  "name": "customer-number-server",
+  "version": "1.0.0",
+  "description": "server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinKurz/ETUR-App.git"
+  },
+  "type": "module",
+  "author": "sinan-kevin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevinKurz/ETUR-App/issues"
+  },
+  "homepage": "https://github.com/KevinKurz/ETUR-App#readme"
+}
