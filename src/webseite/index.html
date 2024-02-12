@@ -1,23 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Etur App</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <main>
-        <header>
-          Kevin
-        </header>
-        <div>Sinan</div> 
-        <footer>
-          kevin
-        </footer>
+      <div class="card-wrapper">
+        <h2>Kunden List</h2>
+        <div class="card">
+          <div class="info-box">
+            <label class="card-label" for="userId">Kundennummer</label>
+            <span>12345</span>
+          </div>
+          <div class="info-box">
+            <label class="card-label" for="userName">Name</label>
+            <span>Sinan Özdemir</span>
+          </div>
+          <div class="info-box">
+            <label class="card-label" for="userTel">Telefon</label>
+            <span>012345678</span>
+          </div>
+          <div class="info-box">
+            <label class="card-label" for="userEmail">Email</label>
+            <span>sinan@gmail.com</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="info-box">
+            <label class="card-label" for="userId">Kundennummer</label>
+            <span>12345</span>
+          </div>
+          <div class="info-box">
+            <label class="card-label" for="userName">Name</label>
+            <span>Sinan Özdemir</span>
+          </div>
+          <div class="info-box">
+            <label class="card-label" for="userTel">Telefon</label>
+            <span>012345678</span>
+          </div>
+          <div class="info-box">
+            <label class="card-label" for="userEmail">Email</label>
+            <span>sinan@gmail.com</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-wrapper">
+        <h2>Neu Kunden anlegen</h2>
+        <div class="new-user-container">
+          <form class="form" action="/action_page.php" method="post">
+            <div class="form-box">
+              <label class="form-label" for="userName">User Name:</label>
+              <input type="text" id="userName" name="userName" />
+            </div>
+            <div class="form-box">
+              <label class="form-label" for="email">Email:</label>
+              <input type="text" id="userName" name="email" />
+            </div>
+            <div class="form-box">
+              <label class="form-label" for="tel">Tel:</label>
+              <input type="text" id="tel" name="tel" />
+            </div>
+            <div class="btn-container">
+              <input class="submit-btn" type="reset" value="Reset" />
+              <input class="submit-btn" type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+
+        <div class="user-number-check-wrapper">
+          <h2>Kundennummer Überprüfen </h2>
+          <div class="user-number-check-box">
+            <label class="form-label" for="user-number">Kunndennummer:</label>
+            <input type="text" id="user-number" name="user-number" />
+            <input class="submit-btn" type="reset" value="Reset" />
+            <input class="submit-btn" type="submit" value="Submit" />
+          </div>
+          <div>
+            <p class="existing">Kunden nummer ist vorhanden</p>
+            <p class="removing">Kunden nummer ist nicht vorhanden!</p>
+          </div>
+        </div>
+      </div>
     </main>
-	<script src="index.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>

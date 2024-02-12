@@ -1,0 +1,78 @@
+.card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  display: flex;
+  width: 60%;
+  gap: 1rem;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  gap: 12px;
+}
+
+.card-label {
+  font-weight: bold;
+  color: #333;
+}
+
+span {
+  color: #555;
+  width: 8rem;
+}
+
+.form-wrapper,
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.new-user-container {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+
+  width: 30%;
+  padding: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: end;
+}
+
+.form-box {
+  display: flex;
+  gap: 8px;
+  justify-content: end;
+}
+
+.btn-container {
+  display: flex;
+  gap: 12px;
+}
+
+.user-number-check-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.user-number-check-box {
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+}
+
+
+
+.existing {
+    color: green;
+}
+
+.removing {
+    color: red;
+}
