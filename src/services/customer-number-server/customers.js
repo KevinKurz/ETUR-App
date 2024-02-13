@@ -129,3 +129,9 @@ export async function routes(fastify, options) {
     }
   });
 }
+
+export function createNewCustomer(newCustomer)
+{
+  customers.push(newCustomer)
+  console.log(customers)
+}

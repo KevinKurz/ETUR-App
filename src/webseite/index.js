@@ -2,6 +2,8 @@ import { getAllCustomers } from "./../services/customer-number-server/customers.
 import { getCustomerWidthID } from "./../services/customer-number-server/customers.js";
 import { deleteCustomerWidthID } from "./../services/customer-number-server/customers.js";
 import { validateCustomerNumber } from "./../services/customer-number-server/customers.js";
+import { createNewCustomer } from "./../services/customer-number-server/customers.js";
+
 
 
 const customers = getAllCustomers(); // Holen Sie sich die Kundeninformationen
@@ -48,3 +50,27 @@ const deleteCustomer = deleteCustomerWidthID("002");
 
 const validateCustomerId = validateCustomerNumber(customers[1].customerId)
 console.log(validateCustomerId)
+function createNewCustomerThroughSubmit()
+{
+    let submitBtn = document.getElementsByClassName("submit-btn").value;
+
+    if (submitBtn == "Submit")
+    {
+        let userId = customers.length+1;
+        let userName = document.getElementById("userName").value;
+        let userTel = document.getElementById("userTel").value;
+        let userEmail = document.getElementById("userEmail").value;
+        
+        const newCustomer = 
+        {
+            customerId: userId,
+            customerName: userName,
+            customerTel: userTel,
+            customerEmail: userEmail
+        }
+        createNewCustomer(newCustomer)
+    }
+}
+
+createNewCustomerThroughSubmit();
+
