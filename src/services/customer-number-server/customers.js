@@ -40,3 +40,10 @@ const customers = [
 export function getAllCustomers() {
   return customers;
 }
+
+
+export function createNewCustomer(newCustomer)
+{
+  customers.push(newCustomer)
+  console.log(customers)
+}
