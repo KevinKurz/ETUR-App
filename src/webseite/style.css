@@ -18,6 +18,8 @@
 .card-label {
   font-weight: bold;
   color: #333;
+  width: 8rem;
+
 }
 
 span {
@@ -87,7 +89,6 @@ main
     justify-content: space-between;
 }
 
-/* Header Hintergrund */
 header 
 {
     background-color: burlywood;
@@ -98,7 +99,6 @@ header
     height: 50px;
 }
 
-/* Hauptüberschrift ETUR App*/
 h1
 {
     color: black;
@@ -107,7 +107,6 @@ h1
     display: block;
 }
 
-/* Dropdown Button*/
 .drop_btn 
 {
     background-color: antiquewhite;
@@ -117,13 +116,11 @@ h1
     border: none;
 }
 
-/* Dropdown Position*/
 .dropdown 
 {
    display: flex;
 }
 
-/* Dropdown Untermenüpunkte*/
 a 
 {
     color: black;
@@ -138,10 +135,8 @@ a:hover {
 background-color: beige;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
-/* Footer Hintergrund*/
 footer 
 {
     background-color: burlywood;

@@ -1,4 +1,4 @@
-const user = [
+const customers = [
   {
     customerId: "001",
     customerName: "Kevin",
@@ -37,6 +37,6 @@ const user = [
   },
 ];
 
-
-
-
+export function getAllCustomers() {
+  return customers;
+}
