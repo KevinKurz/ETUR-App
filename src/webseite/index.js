@@ -1,7 +1,21 @@
 import { getAllCustomers } from "./../services/customer-number-server/customers.js";
-const customers = getAllCustomers(); // Holen Sie sich die Kundeninformationen
+import { getCustomerWidthID } from "./../services/customer-number-server/customers.js";
+import { deleteCustomerWidthID } from "./../services/customer-number-server/customers.js";
+import { validateCustomerNumber } from "./../services/customer-number-server/customers.js";
 
+
+const customers = getAllCustomers(); // Holen Sie sich die Kundeninformationen
 const customerListElement = document.getElementById('customer-list'); // Holen Sie sich das Element, in das die Kundenliste eingefügt werden soll
+
+// function displayUserList() {
+//    let x = document.getElementById("customer-list");
+//     if (!displayCustomerList) {
+//       x.style.display = "block";
+//     } else {
+//       x.style.display = "none";
+//     }
+//   }
+
 
 customers.forEach(customer => {
     // Für jeden Kunden erstellen wir eine neue Karte
@@ -28,3 +42,9 @@ customers.forEach(customer => {
     // Füge die Karte zum Kundenlisten-Element hinzu
     customerListElement.appendChild(cardElement);
 });
+
+const customer = getCustomerWidthID("004");
+const deleteCustomer = deleteCustomerWidthID("002");
+
+const validateCustomerId = validateCustomerNumber(customers[1].customerId)
+console.log(validateCustomerId)

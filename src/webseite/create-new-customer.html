@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Etur App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <main>
+        <header>
+          <h1><a href="./index.html">ETUR App</a></h1>
+
+            <div class = "dropdown">            
+              <a href="./customer-list.html">Alle Kunden anzeigen</a>
+              <a href="./create-new-customer.html">Neuer Kunde</a>
+              <a href="./check-customer-id.html">Kundennummer prüfen</a>             
+            </div>
+          </header>
+      <div class="form-wrapper">
+        <h2>Neu Kunden anlegen</h2>
+        <div class="new-user-container">
+          <form class="form" action="/action_page.php" method="post">
+            <div class="form-box">
+              <label class="form-label" for="userName">User Name:</label>
+              <input type="text" id="userName" name="userName" />
+            </div>
+            <div class="form-box">
+              <label class="form-label" for="email">Email:</label>
+              <input type="text" id="userName" name="email" />
+            </div>
+            <div class="form-box">
+              <label class="form-label" for="tel">Tel:</label>
+              <input type="text" id="tel" name="tel" />
+            </div>
+            <div class="btn-container">
+              <input class="submit-btn" type="reset" value="Reset" />
+              <input class="submit-btn" type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+       
+        <footer>
+          <p><h2>Kontakt</h2></p>
+          <p><h2>Impressum</h2></p>
+          <p><h2>Copyright © 2024 Sinan und Kevin. All Rights Reserved.</h2></p>
+        </footer>
+    </main>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

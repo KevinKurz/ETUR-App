@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/KevinKurz/ETUR-App/issues"
   },
-  "homepage": "https://github.com/KevinKurz/ETUR-App#readme"
+  "homepage": "https://github.com/KevinKurz/ETUR-App#readme",
+  "dependencies": {
+    "fastify": "^4.26.1"
+  }
 }
