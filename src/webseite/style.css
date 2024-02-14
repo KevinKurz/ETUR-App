@@ -61,9 +61,9 @@ span {
 }
 
 .user-number-check-wrapper {
-    display: flex;
-    flex-direction: column;
-    text-align:center;
+  display: flex;
+  flex-direction: column;
+  text-align:center;
 }
 
 .user-number-check-box {
@@ -72,8 +72,6 @@ span {
   padding: 16px;
 }
 
-
-
 .existing {
     color: green;
 }
@@ -81,8 +79,6 @@ span {
 .removing {
     color: red;
 }
-
-
 
 main 
 {
@@ -131,7 +127,6 @@ a
     text-decoration: none;
     display: block;
     border-radius: 8px;
-    
 }
 
 a:hover {
