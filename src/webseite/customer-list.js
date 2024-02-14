@@ -1,4 +1,4 @@
-import { getAllCustomers } from "../../services/customer-number-server/customers.js";
+import { getAllCustomers } from "./../services/customer-number-server/customers.js";
 
 const customers =  getAllCustomers();
 console.log(customers);

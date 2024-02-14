@@ -1,4 +1,4 @@
-import { postNewCustomer } from "../../services/customer-number-server/customers.js";
+import { postNewCustomer } from "./../services/customer-number-server/customers.js";
 
 const form = document.getElementById("form");
 
