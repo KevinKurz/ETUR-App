@@ -93,11 +93,15 @@ function getCustomerWithID(id) {
   return customers.find((customer) => customer.customerId === id);
 }
 
+// API für die Customer-----------------------------------------------------------------------------
+
+// get all customers
 export async function routes(fastify, options) {
   fastify.get("/customers", async (request, reply) => {
     return customers;
   });
 
+  // get customer by ID
   fastify.get("/customer/:id", async (request, reply) => {
     const customerId = request.params.id;
     const customer = getCustomerWithID(customerId);
@@ -108,6 +112,7 @@ export async function routes(fastify, options) {
     }
   });
 
+  // post customer
   fastify.post("/customer", async (request, reply) => {
     const newCustomerData = request.body;
     if (
@@ -135,6 +140,7 @@ export async function routes(fastify, options) {
     }
   });
 
+  // delete customer
   fastify.delete("/customer/:id", async (request, reply) => {
     const customerId = request.params.id;
     const isDeleted = deleteCustomerWithID(customerId);
@@ -145,6 +151,8 @@ export async function routes(fastify, options) {
     }
   });
 }
+
+//HTTP Requests für API--------------------------------------------------------------------------
 
 export function getAllCustomers() {
   const response = fetch("http://localhost:3000/customers", {
